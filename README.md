@@ -1,44 +1,70 @@
-# 🕳️ Pothole Detection using YOLOv8 and Streamlit
+<div align="center">
 
-A complete **Deep Learning-based Pothole Detection System** using **YOLOv8**, **OpenCV**, and **Streamlit** to automatically detect and locate potholes from road images or live camera feeds. 
-This project covers data preparation, model training, prediction, and deployment via an interactive web interface.
+  <h1>🚧 Pothole Detection System</h1>
+  
+  <p>
+    <img src="https://img.shields.io/badge/Python-3.9+-blue.svg" alt="Python">
+    <img src="https://img.shields.io/badge/YOLO-v8-orange.svg" alt="YOLOv8">
+    <img src="https://img.shields.io/badge/Framework-Streamlit-red.svg" alt="Streamlit">
+    <img src="https://img.shields.io/badge/CV-OpenCV-green.svg" alt="OpenCV">
+  </p>
+  
+  <p><i>An advanced Deep Learning solution for real-time road hazard detection.</i></p>
 
----
-
-## 🚀 Project Overview
-
-Potholes are one of the primary causes of road damage and traffic accidents. 
-This system leverages **YOLOv8 (You Only Look Once)** for real-time object detection to identify potholes efficiently in images, videos, or live streams.
-
-### 🔍 Key Features
-- **YOLOv8-based object detection**
-- Detect potholes in images, videos, or webcam feed
-- **Streamlit interface** for user-friendly interaction
-- Customizable configuration using YAML
-- Save and analyze detection results
+</div>
 
 ---
 
-## 🧩 Project Structure
+## 🎥 Project Demo
+https://github.com/user-attachments/assets/1602fb49-f0b2-4c54-ae64-c26f09dbcff1
 
-```text
-pothole-detection/
-│
-├── README.md              # Project documentation
-├── requirements.txt       # Dependencies
-├── pothole_config.yaml    # Model configuration
-├── yolov8n.pt            # Pretrained YOLOv8 model weights
-│
-├── Pothole-Dataset/       # Dataset folder
-│
-├── src/
-│   ├── app.py             # Streamlit app for detection
-│   ├── train.py           # Model training script
-│   ├── predict.py         # Inference/prediction script
-│   ├── split_data.py      # Train-test split helper
-│   └── my_converter.py    # Annotation/data converter
-│
-├── results/               # Saved detection outputs
-├── runs/                  # YOLOv8 training logs
-├── sample/                # Sample test images
-└── venv/                  # Virtual environment (ignored)
+
+---
+
+## 📖 Overview
+This project implements an automated **Pothole Detection System** using computer vision and deep learning techniques. By leveraging the **YOLOv8-small** model, we have created a robust and efficient solution for identifying and localizing potholes in road images and videos.
+
+This tool is designed to assist in road maintenance prioritization and driver safety systems.
+
+## ✨ Key Features
+* **🧠 YOLOv8-small Model:** Utilizes the compact yet powerful YOLOv8 architecture for high-speed object detection.
+* **🎥 Multi-format Input:** Capable of processing both static images and video feeds.
+* **⚡ Real-time Detection:** Optimized inference speed suitable for edge devices.
+* **💻 User-friendly Interface:** Built with **Streamlit** for easy interaction and result visualization.
+
+## 🛠️ Technology Stack
+* **Deep Learning:** YOLOv8 (Ultralytics)
+* **Computer Vision:** OpenCV, Supervision
+* **Data Processing:** NumPy, Pandas
+* **Interface:** Streamlit
+
+---
+
+## 🚀 Setup and Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Debojyoti2904/Pothole-detection-using-YOLO-v8.git](https://github.com/Debojyoti2904/Pothole-detection-using-YOLO-v8.git)
+    cd Pothole-detection-using-YOLO-v8
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Run the App:**
+    ```bash
+    streamlit run app.py
+    ```
+
+## 🎯 Usage
+1.  Launch the Streamlit interface using the command above.
+2.  **Upload** an image or video file containing road footage.
+3.  Adjust the **Confidence Threshold** slider to filter weak detections.
+4.  View the processed output with bounding boxes drawn around detected potholes.
+
+---
+<div align="center">
+  <p>Developed with ❤️ for Safer Roads</p>
+</div>
