@@ -1,0 +1,11 @@
+# Path to the folder containing training images
+train: D:\Pothole_Detection\Pothole-Dataset\images\train
+
+# Path to the folder containing validation images
+val: D:\Pothole_Detection\Pothole-Dataset\images\valid
+
+# Number of classes (we are only detecting one thing: 'pothole')
+nc: 1
+
+# The names of our classes
+names: ['pothole']

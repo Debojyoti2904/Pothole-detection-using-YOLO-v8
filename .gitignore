@@ -1,0 +1,5 @@
+# Ignore heavy data and training logs
+data/
+runs/**/weights/
+__pycache__/
+venv/
